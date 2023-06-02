@@ -1,7 +1,12 @@
 #include <stdlib.h>
 #include <string.h>
 #include "lists.h"
-
+/**
+  * *add_node - add new node at the beginning of the list
+  * @str: string
+  * @head: double pointer to the list
+  * Return: the address of new element or Null
+  */
 list_t *add_node(list_t **head, const char *str)
 {
 	list_t *new;
