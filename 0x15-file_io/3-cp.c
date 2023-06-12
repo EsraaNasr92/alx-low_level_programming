@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
 	do {
 		if (from_fd == -1 || r == -1)
 		{
-			dprintf(STDERR_FILENO,"Error: Can't read from file %s\n", argv[1]);
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 			free(buffer);
 			exit(98);
 		}
@@ -78,7 +78,7 @@ char *create_buffer(char *file)
 
 /**
  * close_file - Closes file descriptors.
- * @fd: The file descriptor to be closed.
+ * @fd_value: The file descriptor to be closed.
  */
 void close_file(int fd_value)
 {
